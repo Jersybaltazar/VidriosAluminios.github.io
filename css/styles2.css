@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+}
+.title{
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pdfview{
+   background-image: url(../img/1676946548253.jpg);
+    
+   background-position: center center;
+   background-size: cover;
+   margin: auto;
+   display: block;
+   width: 500px;
+   height: 100vh; 
+}
+
+@media (min-width:768px) {
+    .pdfview{
+        margin: auto;
+        display: block;
+        width: 850px;
+        height: 100vh;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+    }
+}
+

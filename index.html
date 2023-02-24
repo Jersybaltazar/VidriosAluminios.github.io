@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busines Tecnology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js " crossorigin="anonymus"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+        <div class="contenido-navegacion">
+            <a href="" class="navL">
+                <img src="img/Sin título.png" alt="favicon" class="navL-img">
+            </a>
+            <div class="logo">
+                <h2><span>VIDRIOS  </span> Y AlUMINIOS<span> G&H</span></h2>
+            </div>
+            <nav class="navegacion ocultar">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contactos">Contactos</a>
+            </nav>
+            <div class="hamburguesa">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="contenido-encabezado contenedor">
+            <div class="texto-encabezado">
+                <h1>CALIDAD <br> EXPERIENCIA  COMPROMISO</h1>
+            </div>
+            <form method="POST" class="formulario-encabezado">
+                <h2>Agenda una cita con nosotros</h2>
+                <div class="input-encabezado">
+                    <input type="text" placeholder="Nombre:" name="nombre" id="nombre" required>
+                </div>
+                <div class="input-encabezado">
+                    <input type="mail" placeholder="Mensaje:" name="email" id="email" required>
+                </div>
+                <div class="input-encabezado">
+                    <input type="tel" placeholder="Telefono:" name="telefono" id="telefono" required>
+                </div>
+                <div class="boton-encabezado">
+                    <input  id="enviarCorreo" class="btn azul" type="submit" value="Cotizar">
+                </div>
+            </form>
+            <script>
+                const btnEnvio = document.getElementById('enviarCorreo')
+
+                    btnEnvio.addEventListener('click',function(e){
+                        e.preventDefault();
+                        const nombre =document.getElementById('nombre').value;
+                        const email =document.getElementById('email').value;
+                        const telefono =document.getElementById('telefono').value;
+                        window.location.href= `mailto:vidriosyaluminiosgyh@gmail.com?
+                        subject=envioDesdeFormulario&body=nombre%3A${nombre}%0Amensaje%3A${email}%0Atelefono%3A${telefono}`
+
+                    });
+            </script>
+
+
+        </div>
+    </header>
+    <div class="ventajas">
+        <div class="contenido-ventajas contenedor">
+            <div class="ventaja">
+                <i class="fas fa-clock"></i>
+                <h3>Entregas Puntuales</h3>
+                <p>En Vidrios y Aluminios G & H nos preocupamos y esmeramos para entregarte un proyecto sin demoras y con los 
+                    mejores acabados!</p>
+            </div>
+            <div class="ventaja">
+                <i class="fas fa-vihara"></i>
+                <h3>Diseños Modernos</h3>
+                <p>Vamos de la mano con la moda y lo ultimo en la tecnologia para asi poder 
+                    implementar diseños practicos   modernos y seguros !</p>
+            </div>
+            <div class="ventaja">
+                <i class="fas fa-check-square"></i>
+                <h3>Productos de Calidad</h3>
+                <p>Nuestros productos,nuestras obras y nuestros clientes 
+                    son la garantia de que en nuestra empresa usamos el mejor material para su seguridad!</p>
+            </div>
+        </div>
+    </div>
+    <section class="nosotros contenedor" id="nosotros">
+        <h2><span>¿Quienes Somos?</span></h2>
+        <div class="contenido-nosotros">
+            <div class="texto-nosotros">
+                <h3>Hacemos realidad tu imaginación</h3>
+                <p>Somos una empresa que se dedica a la elaboración de proyectos con cristales de todos tipos en los rubros de construción, carpinteria, ebanisteria.</p>
+                <a href="pdf.html" class="btn bordes">Saber más</a>
+            </div>
+        </div>
+    </section>
+    <section class="servicios contenedor" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="contenido-servicios">
+            <div class="servicio">
+                <i class="fas fa-globe"></i>
+                <h3>Cristales Anti-Ruido</h3>
+                <p>Es prioridad para nosotros darle al cliente los mejores productos en su tipo,
+                    como cabinas de grabación, salas de conferencia, separadores de oficina, etc
+                </p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-vector-square"></i>
+                <h3>Cristales Templados</h3>
+                <p>Nos preocupamos en buscar, calificar y elegir un excelente material, para la realizacion 
+                    de los proyectos y para su seguridad.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-building"></i>
+                <h3>Ventanas | Mamparas | Barandas</h3>
+                <p>-Ventanas en sistema nova -Ventanas proyectantes -Corredizos pivot
+                    -Mamparas serie 35 -Mamparas sistema -Barandas en aluminio -Muro cortina
+                </p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-wrench"></i>
+                <h3> Drywall </h3>
+                <p>Tenemos personal altamente capacitado para proyectos que se realizan con drywall, como separaciones, ambientes y novedosas 
+                    construcciones arquitectonicas .</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-laptop-house"></i>
+                <h3>Melamina</h3>
+                <p>Vendemos y realizamos muebles en melamina del mas fino acabado, muebles diseñados a su gusto y su comodidad.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-briefcase"></i>
+                <h3>Acero</h3>
+                <p>Proyectos en Aceros inoxidable y de la mejor calidad: como barandas, pasamanos, puertas,etc.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="contacto" id="contactos">
+        <h2>Contactanos </h2>
+        <div class="contenido-contacto">
+            <div class="informacion-contacto">
+                <h3>Informacion de Contactos</h3>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p><i class="fas fa-map-marker-alt"></i> Av.Victor Malazquet - Mz.C2 Lte 5A, Pachacamac-Lima</p>
+                <p><i class="fas fa-envelope"></i>  Vidriosyaluminiosgyh@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> +51929486406</p>
+                <div class="redes-sociales">
+                    <a href="https://wa.me/51988645710"><i class="fab fa-whatsapp-square"></i></a>
+                    <a href="https://wa.me/51955757149"><i class="fab fa-whatsapp-square"></i></a>
+                    <a href="https://www.facebook.com/gregoriopercy.baltazargamez"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/vidriosyaluminios.gyh/"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://www.tiktok.com/@vidriosyaluminios.gyh"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <form action="https://formsubmit.co/vidriosyaluminiosgyh@gmail.com" class="formulario-contacto" method="POST">
+                <div class="input-contacto">
+                    <label for="nombre">Nombres </label>
+                    <input type="text" name="name" id="nombre" placeholder="Pedro Perez">
+                </div>
+                <div class="input-contacto">
+                    <label for="correo">Correo</label>
+                    <input type="text" name="email" id="correo" placeholder="example@example.com">
+                </div>
+                <div class="input-contacto">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="telefono" id="telefono" placeholder="+51 9876254342">
+                </div>
+                <div class="input-contacto">
+                    <label for="telefono"  >Mensaje</label>
+                    
+                    <textarea name="mensaje"></textarea>
+                </div>
+                
+
+                <div class="input-contacto">
+                    <input type="submit" value="Enviar" class="btn azul">
+                </div>
+                
+
+
+            </form>
+        </div>    
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <h2>  <span>Vidrios  </span> y <span>Aluminios       </span>  G <span>&</span> H </h2> 
+        </div>
+        <p>Todos los derechos reservados <span class="fecha"></span> &copy; Desarrollado por Jersy</p>
+
+    </footer>
+    <script src="js/ap.js"></script> 
+</body>
+
+</html>
